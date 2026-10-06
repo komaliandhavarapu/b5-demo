@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tg-fur" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fedcb0"/>
+      <stop offset="50%" stop-color="#f5ba75"/>
+      <stop offset="85%" stop-color="#e29b4c"/>
+      <stop offset="100%" stop-color="#c67e33"/>
+    </radialGradient>
+    <radialGradient id="tg-snout" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fff5ea"/>
+      <stop offset="80%" stop-color="#fce2c5"/>
+      <stop offset="100%" stop-color="#f0caa2"/>
+    </radialGradient>
+    <radialGradient id="tg-ear-inner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffaab8"/>
+      <stop offset="100%" stop-color="#e97b91"/>
+    </radialGradient>
+    <radialGradient id="tg-blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7b92" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff7b92" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tg-hat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9ab5"/>
+      <stop offset="35%" stop-color="#ffd56b"/>
+      <stop offset="70%" stop-color="#7fe0cc"/>
+      <stop offset="100%" stop-color="#b69efa"/>
+    </linearGradient>
+    <linearGradient id="tg-gift" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fce1ea"/>
+    </linearGradient>
+    <linearGradient id="tg-ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff608c"/>
+      <stop offset="50%" stop-color="#ff85aa"/>
+      <stop offset="100%" stop-color="#e63d6e"/>
+    </linearGradient>
+    <filter id="tg-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#803818" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#tg-shadow)">
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <circle cx="56" cy="72" r="24" fill="url(#tg-fur)"/>
+    <circle cx="56" cy="72" r="14" fill="url(#tg-ear-inner)"/>
+    
+    <!-- Right Ear -->
+    <circle cx="144" cy="72" r="24" fill="url(#tg-fur)"/>
+    <circle cx="144" cy="72" r="14" fill="url(#tg-ear-inner)"/>
+
+    <!-- Body behind head -->
+    <ellipse cx="100" cy="175" rx="55" ry="50" fill="url(#tg-fur)"/>
+    <!-- Tummy lighter patch -->
+    <ellipse cx="100" cy="175" rx="36" ry="32" fill="url(#tg-snout)" opacity="0.8"/>
+
+    <!-- Paws bottom -->
+    <ellipse cx="65" cy="216" rx="20" ry="15" fill="url(#tg-fur)"/>
+    <ellipse cx="65" cy="216" rx="13" ry="9" fill="url(#tg-ear-inner)" opacity="0.5"/>
+    <ellipse cx="135" cy="216" rx="20" ry="15" fill="url(#tg-fur)"/>
+    <ellipse cx="135" cy="216" rx="13" ry="9" fill="url(#tg-ear-inner)" opacity="0.5"/>
+
+    <!-- Head -->
+    <circle cx="100" cy="100" r="54" fill="url(#tg-fur)"/>
+
+    <!-- Party Hat -->
+    <polygon points="100,16 76,70 124,70" fill="url(#tg-hat)"/>
+    <!-- Hat stripes -->
+    <path d="M 80,60 Q 100,64 120,60 L 123,67 Q 100,71 77,67 Z" fill="#ffd15c" opacity="0.9"/>
+    <path d="M 86,45 Q 100,48 114,45 L 117,51 Q 100,54 83,51 Z" fill="#ff7f9f" opacity="0.9"/>
+    <path d="M 92,30 Q 100,32 108,30 L 110,36 Q 100,38 90,36 Z" fill="#6ad5bf" opacity="0.9"/>
+    <!-- Pom-pom -->
+    <circle cx="100" cy="15" r="9" fill="#fff" filter="drop-shadow(0 2px 2px rgba(0,0,0,0.15))"/>
+    <circle cx="100" cy="15" r="6" fill="#ffe28a"/>
+    <!-- Flower on hat brim -->
+    <circle cx="78" cy="70" r="6" fill="#ffbcd2"/>
+    <circle cx="78" cy="70" r="3" fill="#ffe28a"/>
+
+    <!-- Snout -->
+    <ellipse cx="100" cy="114" rx="24" ry="18" fill="url(#tg-snout)"/>
+    <!-- Nose -->
+    <path d="M 94,106 C 94,103 106,103 106,106 C 106,111 101,114 100,114 C 99,114 94,111 94,106 Z" fill="#542e1d"/>
+    <ellipse cx="98" cy="105" rx="2.5" ry="1.2" fill="#fff" opacity="0.7"/>
+    <!-- Mouth -->
+    <path d="M 100,114 L 100,118 M 94,118 Q 100,124 106,118" stroke="#542e1d" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes -->
+    <!-- Left Eye -->
+    <circle cx="79" cy="95" r="6.5" fill="#321b12"/>
+    <circle cx="77" cy="92.5" r="2.5" fill="#ffffff"/>
+    <circle cx="81.5" cy="96.5" r="1.2" fill="#ffffff"/>
+    <!-- Right Eye -->
+    <circle cx="121" cy="95" r="6.5" fill="#321b12"/>
+    <circle cx="119" cy="92.5" r="2.5" fill="#ffffff"/>
+    <circle cx="123.5" cy="96.5" r="1.2" fill="#ffffff"/>
+
+    <!-- Blushing cheeks -->
+    <circle cx="70" cy="108" r="12" fill="url(#tg-blush)"/>
+    <circle cx="130" cy="108" r="12" fill="url(#tg-blush)"/>
+
+    <!-- Gift Box Held in Paws -->
+    <g transform="translate(0, 15)">
+      <!-- Gift box body -->
+      <rect x="72" y="145" width="56" height="48" rx="6" fill="url(#tg-gift)" stroke="#f2bad0" stroke-width="1.5" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.12))"/>
+      <!-- Vertical ribbon -->
+      <rect x="94" y="145" width="12" height="48" fill="url(#tg-ribbon)"/>
+      <!-- Horizontal ribbon -->
+      <rect x="72" y="163" width="56" height="12" fill="url(#tg-ribbon)"/>
+      <!-- Gift Bow -->
+      <!-- Left loop -->
+      <path d="M 100,145 C 85,133 75,138 88,145 Z" fill="url(#tg-ribbon)"/>
+      <!-- Right loop -->
+      <path d="M 100,145 C 115,133 125,138 112,145 Z" fill="url(#tg-ribbon)"/>
+      <!-- Bow knot -->
+      <circle cx="100" cy="145" r="5" fill="#ff4d7e"/>
+      <ellipse cx="99" cy="144" rx="2" ry="1.2" fill="#fff" opacity="0.6"/>
+    </g>
+
+    <!-- Paws holding the gift -->
+    <!-- Left Paw -->
+    <ellipse cx="68" cy="172" rx="14" ry="11" transform="rotate(20 68 172)" fill="url(#tg-fur)"/>
+    <!-- Right Paw -->
+    <ellipse cx="132" cy="172" rx="14" ry="11" transform="rotate(-20 132 172)" fill="url(#tg-fur)"/>
+  </g>
+</svg>

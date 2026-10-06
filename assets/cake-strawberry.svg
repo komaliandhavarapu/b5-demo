@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sc-cream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fff4f7"/>
+      <stop offset="100%" stop-color="#fae1eb"/>
+    </linearGradient>
+    <linearGradient id="sc-pink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb8cc"/>
+      <stop offset="50%" stop-color="#f88ca8"/>
+      <stop offset="100%" stop-color="#e86588"/>
+    </linearGradient>
+    <radialGradient id="sc-straw" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff607b"/>
+      <stop offset="40%" stop-color="#e82046"/>
+      <stop offset="100%" stop-color="#a60c2b"/>
+    </radialGradient>
+    <radialGradient id="sc-flame" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fff37a"/>
+      <stop offset="75%" stop-color="#ffa033"/>
+      <stop offset="100%" stop-color="#ff5511" stop-opacity="0.8"/>
+    </radialGradient>
+    <radialGradient id="sc-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe680" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffd54d" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffae19" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sc-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#803855" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Big golden halo of light above the cake -->
+  <circle cx="120" cy="55" r="50" fill="url(#sc-halo)"/>
+
+  <g filter="url(#sc-shadow)">
+    <!-- Pedestal Cake Stand -->
+    <!-- Base Plate -->
+    <ellipse cx="120" cy="225" rx="72" ry="12" fill="#ffffff" stroke="#e8d5df" stroke-width="1.5"/>
+    <ellipse cx="120" cy="223" rx="68" ry="10" fill="#fcf6f9"/>
+    <!-- Pedestal Stem -->
+    <path d="M 112,225 L 114,242 L 105,250 L 135,250 L 126,242 L 128,225 Z" fill="#ffffff" stroke="#e8d5df" stroke-width="1.5"/>
+    <!-- Pink Ribbon Bow on Pedestal -->
+    <g transform="translate(120, 246)">
+      <path d="M 0,0 C -12,-8 -18,2 -3,2 Z" fill="#ff7da0"/>
+      <path d="M 0,0 C 12,-8 18,2 3,2 Z" fill="#ff7da0"/>
+      <circle cx="0" cy="1" r="3.5" fill="#e6426d"/>
+      <path d="M -2,2 Q -8,12 -12,16" stroke="#ff7da0" stroke-width="2" fill="none"/>
+      <path d="M 2,2 Q 8,12 12,16" stroke="#ff7da0" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- TIER 1 (Bottom Tier) -->
+    <!-- Cake Body -->
+    <ellipse cx="120" cy="214" rx="64" ry="14" fill="url(#sc-pink)"/>
+    <rect x="56" y="180" width="128" height="34" fill="url(#sc-cream)"/>
+    <ellipse cx="120" cy="180" rx="64" ry="14" fill="url(#sc-cream)"/>
+    <!-- Strawberries around bottom rim -->
+    <g transform="translate(68, 202)">
+      <ellipse cx="0" cy="0" rx="6" ry="8" fill="url(#sc-straw)"/>
+      <polygon points="0,-7 -3,-9 3,-9" fill="#589e58"/>
+    </g>
+    <g transform="translate(92, 208)">
+      <ellipse cx="0" cy="0" rx="6" ry="8" fill="url(#sc-straw)"/>
+      <polygon points="0,-7 -3,-9 3,-9" fill="#589e58"/>
+    </g>
+    <g transform="translate(120, 210)">
+      <ellipse cx="0" cy="0" rx="6" ry="8" fill="url(#sc-straw)"/>
+      <polygon points="0,-7 -3,-9 3,-9" fill="#589e58"/>
+    </g>
+    <g transform="translate(148, 208)">
+      <ellipse cx="0" cy="0" rx="6" ry="8" fill="url(#sc-straw)"/>
+      <polygon points="0,-7 -3,-9 3,-9" fill="#589e58"/>
+    </g>
+    <g transform="translate(172, 202)">
+      <ellipse cx="0" cy="0" rx="6" ry="8" fill="url(#sc-straw)"/>
+      <polygon points="0,-7 -3,-9 3,-9" fill="#589e58"/>
+    </g>
+
+    <!-- TIER 2 (Middle Tier) -->
+    <ellipse cx="120" cy="174" rx="50" ry="11" fill="url(#sc-pink)"/>
+    <rect x="70" y="145" width="100" height="29" fill="url(#sc-pink)"/>
+    <ellipse cx="120" cy="145" rx="50" ry="11" fill="url(#sc-cream)"/>
+    <!-- Whipped Cream Dollops / Strawberries -->
+    <g transform="translate(85, 164)">
+      <ellipse cx="0" cy="0" rx="5" ry="7" fill="url(#sc-straw)"/>
+      <polygon points="0,-6 -2.5,-8 2.5,-8" fill="#589e58"/>
+    </g>
+    <g transform="translate(120, 168)">
+      <ellipse cx="0" cy="0" rx="5" ry="7" fill="url(#sc-straw)"/>
+      <polygon points="0,-6 -2.5,-8 2.5,-8" fill="#589e58"/>
+    </g>
+    <g transform="translate(155, 164)">
+      <ellipse cx="0" cy="0" rx="5" ry="7" fill="url(#sc-straw)"/>
+      <polygon points="0,-6 -2.5,-8 2.5,-8" fill="#589e58"/>
+    </g>
+
+    <!-- TIER 3 (Top Tier) -->
+    <ellipse cx="120" cy="140" rx="36" ry="8" fill="url(#sc-cream)"/>
+    <rect x="84" y="115" width="72" height="25" fill="url(#sc-cream)"/>
+    <ellipse cx="120" cy="115" rx="36" ry="8" fill="url(#sc-cream)"/>
+    <g transform="translate(100, 130)">
+      <ellipse cx="0" cy="0" rx="4.5" ry="6" fill="url(#sc-straw)"/>
+    </g>
+    <g transform="translate(140, 130)">
+      <ellipse cx="0" cy="0" rx="4.5" ry="6" fill="url(#sc-straw)"/>
+    </g>
+    <!-- Top Big Strawberry Centerpiece -->
+    <g transform="translate(120, 108)">
+      <ellipse cx="0" cy="0" rx="9" ry="12" fill="url(#sc-straw)"/>
+      <polygon points="0,-11 -5,-14 5,-14" fill="#4d994d"/>
+      <circle cx="-3" cy="-2" r="1" fill="#fff" opacity="0.6"/>
+      <circle cx="3" cy="2" r="1" fill="#fff" opacity="0.6"/>
+    </g>
+
+    <!-- 5 Glowing Candles on Top -->
+    <!-- Candle 1 -->
+    <g transform="translate(94, 75)">
+      <rect x="-2.5" y="12" width="5" height="28" rx="2" fill="#ffd566"/>
+      <line x1="0" y1="12" x2="0" y2="4" stroke="#4a2512" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-2" rx="4" ry="8" fill="url(#sc-flame)"/>
+    </g>
+    <!-- Candle 2 -->
+    <g transform="translate(106, 68)">
+      <rect x="-2.5" y="12" width="5" height="34" rx="2" fill="#75d6be"/>
+      <line x1="0" y1="12" x2="0" y2="4" stroke="#4a2512" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-2" rx="4.5" ry="9" fill="url(#sc-flame)"/>
+    </g>
+    <!-- Candle 3 (Center) -->
+    <g transform="translate(120, 62)">
+      <rect x="-3" y="12" width="6" height="38" rx="2" fill="#ff8dae"/>
+      <line x1="0" y1="12" x2="0" y2="4" stroke="#4a2512" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-2" rx="5" ry="10" fill="url(#sc-flame)"/>
+    </g>
+    <!-- Candle 4 -->
+    <g transform="translate(134, 68)">
+      <rect x="-2.5" y="12" width="5" height="34" rx="2" fill="#75d6be"/>
+      <line x1="0" y1="12" x2="0" y2="4" stroke="#4a2512" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-2" rx="4.5" ry="9" fill="url(#sc-flame)"/>
+    </g>
+    <!-- Candle 5 -->
+    <g transform="translate(146, 75)">
+      <rect x="-2.5" y="12" width="5" height="28" rx="2" fill="#ffd566"/>
+      <line x1="0" y1="12" x2="0" y2="4" stroke="#4a2512" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-2" rx="4" ry="8" fill="url(#sc-flame)"/>
+    </g>
+  </g>
+</svg>

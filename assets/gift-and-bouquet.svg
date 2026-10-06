@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gb-gift" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fff0f5"/>
+      <stop offset="100%" stop-color="#fcd8e4"/>
+    </linearGradient>
+    <linearGradient id="gb-ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5989"/>
+      <stop offset="50%" stop-color="#ff85aa"/>
+      <stop offset="100%" stop-color="#e62e64"/>
+    </linearGradient>
+    <radialGradient id="gb-wrap" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fdf4e8"/>
+      <stop offset="80%" stop-color="#ecd9c2"/>
+      <stop offset="100%" stop-color="#dcbe9c"/>
+    </radialGradient>
+    <filter id="gb-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#803850" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Bunny peeking on far right -->
+  <g transform="translate(225, 60)" filter="url(#gb-shadow)">
+    <!-- Bunny ears -->
+    <g transform="rotate(-12 15 50)">
+      <ellipse cx="15" cy="30" rx="9" ry="26" fill="#ffffff"/>
+      <ellipse cx="15" cy="30" rx="5" ry="18" fill="#ffaec5"/>
+    </g>
+    <g transform="rotate(12 35 50)">
+      <ellipse cx="35" cy="30" rx="9" ry="26" fill="#ffffff"/>
+      <ellipse cx="35" cy="30" rx="5" ry="18" fill="#ffaec5"/>
+    </g>
+    <!-- Bunny forehead/eyes peeking -->
+    <ellipse cx="25" cy="70" rx="24" ry="20" fill="#ffffff"/>
+    <circle cx="16" cy="68" r="3" fill="#361f26"/>
+    <circle cx="15" cy="67" r="1.2" fill="#ffffff"/>
+    <circle cx="34" cy="68" r="3" fill="#361f26"/>
+    <circle cx="33" cy="67" r="1.2" fill="#ffffff"/>
+    <circle cx="11" cy="74" r="5" fill="#ff7b9a" opacity="0.5"/>
+    <circle cx="39" cy="74" r="5" fill="#ff7b9a" opacity="0.5"/>
+  </g>
+
+  <!-- Floral Bouquet -->
+  <g transform="translate(130, 20)" filter="url(#gb-shadow)">
+    <!-- Paper wrapper cone -->
+    <polygon points="45,160 10,75 80,75" fill="url(#gb-wrap)"/>
+    <path d="M 10,75 Q 45,65 80,75 L 45,160 Z" fill="url(#gb-wrap)" stroke="#cfa679" stroke-width="1"/>
+    <!-- String bow around bouquet -->
+    <ellipse cx="45" cy="115" rx="16" ry="4" fill="none" stroke="#b37f48" stroke-width="2"/>
+    <circle cx="45" cy="115" r="3" fill="#b37f48"/>
+
+    <!-- Flowers in bouquet -->
+    <!-- Green leaves -->
+    <ellipse cx="25" cy="60" rx="8" ry="15" transform="rotate(-35 25 60)" fill="#78be91"/>
+    <ellipse cx="65" cy="60" rx="8" ry="15" transform="rotate(35 65 60)" fill="#78be91"/>
+    <ellipse cx="45" cy="45" rx="6" ry="14" fill="#65ab7e"/>
+
+    <!-- Lavender stalks -->
+    <g transform="translate(20, 25)">
+      <line x1="10" y1="35" x2="5" y2="0" stroke="#5a876a" stroke-width="1.5"/>
+      <circle cx="5" cy="0" r="3" fill="#a484c9"/>
+      <circle cx="7" cy="6" r="3.5" fill="#936fb8"/>
+      <circle cx="4" cy="12" r="3.5" fill="#936fb8"/>
+      <circle cx="8" cy="18" r="3.5" fill="#805ba5"/>
+    </g>
+    <g transform="translate(50, 22)">
+      <line x1="5" y1="35" x2="10" y2="0" stroke="#5a876a" stroke-width="1.5"/>
+      <circle cx="10" cy="0" r="3" fill="#a484c9"/>
+      <circle cx="8" cy="6" r="3.5" fill="#936fb8"/>
+      <circle cx="12" cy="12" r="3.5" fill="#936fb8"/>
+      <circle cx="7" cy="18" r="3.5" fill="#805ba5"/>
+    </g>
+
+    <!-- Baby's breath small white dots -->
+    <circle cx="32" cy="42" r="2.5" fill="#ffffff"/>
+    <circle cx="58" cy="40" r="2.5" fill="#ffffff"/>
+    <circle cx="46" cy="35" r="2.5" fill="#ffffff"/>
+
+    <!-- Pink Roses -->
+    <!-- Center Rose -->
+    <circle cx="45" cy="60" r="14" fill="#ff7f9f"/>
+    <path d="M 45,52 C 40,54 40,62 45,64 C 50,62 50,54 45,52 Z" fill="#ffffff" opacity="0.3"/>
+    <circle cx="45" cy="58" r="6" fill="#f04a74"/>
+
+    <!-- Left Rose -->
+    <circle cx="30" cy="72" r="11" fill="#ffa4b8"/>
+    <circle cx="30" cy="70" r="4.5" fill="#f04a74"/>
+
+    <!-- Right Rose -->
+    <circle cx="60" cy="70" r="11" fill="#ffb4c5"/>
+    <circle cx="60" cy="68" r="4.5" fill="#f04a74"/>
+  </g>
+
+  <!-- Luxury Gift Box -->
+  <g transform="translate(15, 60)" filter="url(#gb-shadow)">
+    <!-- Box Body -->
+    <rect x="15" y="45" width="70" height="60" rx="8" fill="url(#gb-gift)" stroke="#f4bed1" stroke-width="1.5"/>
+    <!-- Lid Overhang -->
+    <rect x="12" y="38" width="76" height="15" rx="4" fill="url(#gb-gift)" stroke="#f4bed1" stroke-width="1.5"/>
+
+    <!-- Vertical Ribbon -->
+    <rect x="42" y="38" width="16" height="67" fill="url(#gb-ribbon)"/>
+    <!-- Horizontal Ribbon -->
+    <rect x="15" y="68" width="70" height="15" fill="url(#gb-ribbon)"/>
+
+    <!-- Luxurious Pink Satin Bow -->
+    <!-- Left Loop -->
+    <path d="M 50,38 C 28,18 18,28 35,38 Z" fill="url(#gb-ribbon)"/>
+    <path d="M 50,38 C 32,24 26,30 38,37 Z" fill="#ffa8c0"/>
+    <!-- Right Loop -->
+    <path d="M 50,38 C 72,18 82,28 65,38 Z" fill="url(#gb-ribbon)"/>
+    <path d="M 50,38 C 68,24 74,30 62,37 Z" fill="#ffa8c0"/>
+    <!-- Knot -->
+    <circle cx="50" cy="38" r="7" fill="#e62e64"/>
+    <ellipse cx="48" cy="36" rx="3" ry="1.8" fill="#ffffff" opacity="0.7"/>
+    <!-- Flowing Ribbon Tails -->
+    <path d="M 46,42 Q 35,65 24,78 Q 30,62 44,45 Z" fill="#ff5989"/>
+    <path d="M 54,42 Q 65,65 76,78 Q 70,62 56,45 Z" fill="#ff5989"/>
+  </g>
+</svg>

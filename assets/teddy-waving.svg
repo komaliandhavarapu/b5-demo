@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tw-fur" cx="45%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#fedcb0"/>
+      <stop offset="50%" stop-color="#f5ba75"/>
+      <stop offset="85%" stop-color="#e29b4c"/>
+      <stop offset="100%" stop-color="#c67e33"/>
+    </radialGradient>
+    <radialGradient id="tw-snout" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fff5ea"/>
+      <stop offset="80%" stop-color="#fce2c5"/>
+      <stop offset="100%" stop-color="#f0caa2"/>
+    </radialGradient>
+    <radialGradient id="tw-ear-inner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffaab8"/>
+      <stop offset="100%" stop-color="#e97b91"/>
+    </radialGradient>
+    <radialGradient id="tw-blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7b92" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff7b92" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tw-hat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8da9"/>
+      <stop offset="40%" stop-color="#ffd56b"/>
+      <stop offset="70%" stop-color="#72dec9"/>
+      <stop offset="100%" stop-color="#ab90fa"/>
+    </linearGradient>
+    <filter id="tw-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#803818" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#tw-shadow)">
+    <!-- Ears -->
+    <circle cx="56" cy="74" r="23" fill="url(#tw-fur)"/>
+    <circle cx="56" cy="74" r="13" fill="url(#tw-ear-inner)"/>
+    
+    <circle cx="144" cy="74" r="23" fill="url(#tw-fur)"/>
+    <circle cx="144" cy="74" r="13" fill="url(#tw-ear-inner)"/>
+
+    <!-- Chubby Body -->
+    <ellipse cx="100" cy="175" rx="55" ry="50" fill="url(#tw-fur)"/>
+    <ellipse cx="100" cy="175" rx="38" ry="34" fill="url(#tw-snout)" opacity="0.85"/>
+
+    <!-- Feet Bottom -->
+    <ellipse cx="70" cy="220" rx="19" ry="14" fill="url(#tw-fur)"/>
+    <circle cx="70" cy="220" r="8" fill="url(#tw-ear-inner)" opacity="0.45"/>
+    <ellipse cx="130" cy="220" rx="19" ry="14" fill="url(#tw-fur)"/>
+    <circle cx="130" cy="220" r="8" fill="url(#tw-ear-inner)" opacity="0.45"/>
+
+    <!-- Left Paw (resting on hip or down) -->
+    <ellipse cx="50" cy="175" rx="15" ry="20" transform="rotate(-15 50 175)" fill="url(#tw-fur)"/>
+
+    <!-- Waving Right Paw (raised high, animated friendly wave!) -->
+    <g class="waving-paw">
+      <ellipse cx="152" cy="140" rx="15" ry="24" transform="rotate(42 152 140)" fill="url(#tw-fur)"/>
+      <ellipse cx="164" cy="126" rx="14" ry="14" fill="url(#tw-fur)"/>
+      <circle cx="164" cy="126" r="7" fill="url(#tw-ear-inner)" opacity="0.6"/>
+    </g>
+
+    <!-- Head -->
+    <circle cx="100" cy="104" r="52" fill="url(#tw-fur)"/>
+
+    <!-- Party Hat -->
+    <polygon points="100,18 76,74 124,74" fill="url(#tw-hat)"/>
+    <path d="M 80,64 Q 100,68 120,64 L 123,71 Q 100,75 77,71 Z" fill="#ffd15c" opacity="0.9"/>
+    <path d="M 86,49 Q 100,52 114,49 L 117,55 Q 100,58 83,55 Z" fill="#ff7f9f" opacity="0.9"/>
+    <path d="M 92,34 Q 100,36 108,34 L 110,40 Q 100,42 90,40 Z" fill="#6ad5bf" opacity="0.9"/>
+    <circle cx="100" cy="16" r="9" fill="#fff" filter="drop-shadow(0 2px 2px rgba(0,0,0,0.15))"/>
+    <circle cx="100" cy="16" r="6" fill="#ffe28a"/>
+    <circle cx="78" cy="74" r="6" fill="#ffbcd2"/>
+    <circle cx="78" cy="74" r="3" fill="#ffe28a"/>
+
+    <!-- Snout -->
+    <ellipse cx="100" cy="118" rx="25" ry="19" fill="url(#tw-snout)"/>
+    <!-- Nose -->
+    <path d="M 94,110 C 94,107 106,107 106,110 C 106,115 101,118 100,118 C 99,118 94,115 94,110 Z" fill="#542e1d"/>
+    <ellipse cx="98" cy="109" rx="2.5" ry="1.2" fill="#fff" opacity="0.7"/>
+    <!-- Joyful smiling open mouth -->
+    <path d="M 100,118 L 100,121 M 92,121 Q 100,131 108,121" stroke="#542e1d" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 95,123 Q 100,131 105,123 Z" fill="#e85d7b"/>
+
+    <!-- Big Happy Eyes with catchlights -->
+    <circle cx="79" cy="98" r="6.5" fill="#321b12"/>
+    <circle cx="77" cy="95.5" r="2.5" fill="#ffffff"/>
+    <circle cx="81.5" cy="99.5" r="1.2" fill="#ffffff"/>
+    
+    <circle cx="121" cy="98" r="6.5" fill="#321b12"/>
+    <circle cx="119" cy="95.5" r="2.5" fill="#ffffff"/>
+    <circle cx="123.5" cy="99.5" r="1.2" fill="#ffffff"/>
+
+    <!-- Cute rosy blushing cheeks -->
+    <circle cx="70" cy="112" r="12" fill="url(#tw-blush)"/>
+    <circle cx="130" cy="112" r="12" fill="url(#tw-blush)"/>
+  </g>
+</svg>

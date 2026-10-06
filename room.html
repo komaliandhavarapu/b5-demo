@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Room Is Waiting • Open With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <!-- Night Sky Stars -->
+  <div class="room-stars" id="roomStars"></div>
+
+  <!-- Crescent Moon in top-right -->
+  <img src="assets/crescent-moon.svg" class="room-moon" alt="Glowing Crescent Moon">
+
+  <!-- Ceiling Bunting Garland (revealed when lights turn on) -->
+  <img src="assets/bunting.svg" class="room-bunting" alt="Party Bunting">
+
+  <!-- Sunrays / Light Beams (Slide 4) -->
+  <div class="sunrays-container">
+    <div class="sunray"></div>
+    <div class="sunbeam-1"></div>
+    <div class="sunbeam-2"></div>
+  </div>
+
+  <!-- Sleeping Teddy Bear at bottom-left -->
+  <img src="assets/teddy-sleeping.svg" class="room-teddy-sleeping" alt="Sleeping teddy bear in party hat">
+
+  <main class="screen room-screen">
+    <div class="screen-container">
+      <p class="room-shhh">Shhh....</p>
+      <h1 class="room-headline">The room is<br>waiting for you.</h1>
+      <p class="room-sub">Someone left the lights off on purpose.</p>
+
+      <button class="btn-lights" id="lightButton">Turn on the lights ✨</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

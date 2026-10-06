@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make A Wish • Open With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <!-- Floating Sparkles -->
+  <div class="sparkle-particles" id="sparkleContainer"></div>
+
+  <main class="screen wish-screen">
+    <div class="screen-container">
+      
+      <!-- Wishing Teddy and Strawberry Cake with Halo (Screenshot 3) -->
+      <div class="wish-characters-wrap">
+        <img src="assets/teddy-wishing.svg" class="wish-teddy" alt="Teddy bear closing eyes making a wish">
+        <img src="assets/cake-strawberry.svg" class="wish-cake" alt="3-tier strawberry birthday cake">
+      </div>
+
+      <!-- Typography -->
+      <h1 class="headline-serif" style="margin-bottom: 8px;">Close your eyes...</h1>
+      <p class="subtext">Make a little wish for the year ahead.</p>
+
+      <!-- Action Button -->
+      <button class="btn-more" data-next="memories.html">I made my wish ✨</button>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

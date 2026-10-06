@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday • Birthday Reveal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <!-- Top Party Bunting Garland -->
+  <img src="assets/bunting.svg" class="reveal-top-bunting" alt="Party Bunting Banner">
+
+  <!-- Floating Sparkles -->
+  <div class="sparkle-particles" id="sparkleContainer"></div>
+
+  <!-- Playful Handwritten Note on mid-left matching Screenshot 5 -->
+  <div class="handwritten-note">yay, you're here!</div>
+
+  <main class="screen reveal-screen">
+    <!-- Top Centered Content -->
+    <div class="reveal-content-wrap">
+      <p class="reveal-eyebrow">Look who's having a birthday...</p>
+      <h1 class="reveal-headline">Happy Birthday,<br><span class="name-highlight" data-name>Aanya</span> <span class="sparkle-gold">✨</span></h1>
+      
+      <!-- Date Badge -->
+      <div class="date-badge">
+        <span class="badge-dot">●</span>
+        <span data-date>28 September</span>
+      </div>
+
+      <!-- Action Button -->
+      <button class="btn-more" data-next="cake.html">There's more 💖</button>
+    </div>
+
+    <!-- Bottom Celebratory 3D Illustration Scene -->
+    <div class="reveal-scene-bottom">
+      <!-- Left Pastel Balloons Cluster -->
+      <img src="assets/balloons-left.svg" class="scene-balloons-left" alt="Pastel birthday balloons">
+
+      <!-- Center Waving Happy Teddy Bear -->
+      <img src="assets/teddy-waving.svg" class="scene-teddy-waving" alt="Waving party-hat teddy bear">
+
+      <!-- Gift Box, Vintage Bouquet and Peeking Bunny -->
+      <img src="assets/gift-and-bouquet.svg" class="scene-gift-bouquet" alt="Gift box, floral bouquet and peeking bunny">
+
+      <!-- Right Pastel Balloons Cluster -->
+      <img src="assets/balloons-right.svg" class="scene-balloons-right" alt="Pastel balloons right">
+
+      <!-- Scalloped Table / Cake Base -->
+      <div class="scalloped-table">
+        <div class="scalloped-edge"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

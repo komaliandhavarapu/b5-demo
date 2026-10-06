@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday • Open With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <!-- Floating Sparkles & Confetti -->
+  <div class="sparkle-particles" id="sparkleContainer"></div>
+
+  <main class="screen final-page-screen">
+    <div class="final-page-container">
+      
+      <!-- Floating Teddy Bear with Pink Balloon -->
+      <img src="assets/teddy-balloon-wave.svg" class="final-teddy-balloon" alt="Teddy bear with pink balloon">
+
+      <!-- Headline matching Screenshot -->
+      <h1 class="final-page-title">
+        Happy Birthday,<br>
+        <span class="final-name" data-name>Aanya</span><span class="final-exclamation">!</span>
+        <img src="assets/cake-mini.svg" class="inline-mini-cake" alt="birthday cake">
+      </h1>
+
+      <!-- Heartfelt Subtitle -->
+      <p class="final-page-sub">
+        May this year bring you countless little<br>reasons to smile.
+      </p>
+
+      <!-- Signature -->
+      <p class="final-page-sign" data-from>— with love, Someone Special</p>
+
+      <!-- Replay Button -->
+      <button class="btn-replay-pill" onclick="next('index.html')">
+        Replay the surprise <span class="replay-icon">↺</span>
+      </button>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

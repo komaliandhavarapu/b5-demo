@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 70" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ab-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb8cc"/>
+      <stop offset="50%" stop-color="#f48ea8"/>
+      <stop offset="100%" stop-color="#dc6886"/>
+    </linearGradient>
+    <filter id="ab-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#803850" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#ab-shadow)" transform="translate(40, 30)">
+    <!-- Left Loop -->
+    <path d="M 0,0 C -24,-18 -32,4 -6,5 Z" fill="url(#ab-grad)"/>
+    <path d="M 0,0 C -18,-12 -24,3 -6,4 Z" fill="#ffd4e1"/>
+    <!-- Right Loop -->
+    <path d="M 0,0 C 24,-18 32,4 6,5 Z" fill="url(#ab-grad)"/>
+    <path d="M 0,0 C 18,-12 24,3 6,4 Z" fill="#ffd4e1"/>
+    <!-- Center knot -->
+    <circle cx="0" cy="2" r="5" fill="#dc6886"/>
+    <!-- Tails -->
+    <path d="M -2,4 Q -12,20 -18,26 Q -14,18 -4,8 Z" fill="url(#ab-grad)"/>
+    <path d="M 2,4 Q 12,20 18,26 Q 14,18 4,8 Z" fill="url(#ab-grad)"/>
+  </g>
+</svg>

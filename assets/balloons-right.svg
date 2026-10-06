@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="100%" height="100%">
+  <defs>
+    <radialGradient id="br-peach" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff5f2"/>
+      <stop offset="25%" stop-color="#ffbda8"/>
+      <stop offset="75%" stop-color="#fa896b"/>
+      <stop offset="100%" stop-color="#d65735"/>
+    </radialGradient>
+    <radialGradient id="br-purple" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="25%" stop-color="#d6bbfb"/>
+      <stop offset="75%" stop-color="#b692f6"/>
+      <stop offset="100%" stop-color="#8054c7"/>
+    </radialGradient>
+    <radialGradient id="br-yellow" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fffef0"/>
+      <stop offset="25%" stop-color="#ffe999"/>
+      <stop offset="75%" stop-color="#ffd25c"/>
+      <stop offset="100%" stop-color="#e6a422"/>
+    </radialGradient>
+    <radialGradient id="br-mint" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f0fdf9"/>
+      <stop offset="25%" stop-color="#99f6e0"/>
+      <stop offset="75%" stop-color="#47cdb2"/>
+      <stop offset="100%" stop-color="#1f937d"/>
+    </radialGradient>
+    <filter id="br-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="-2" dy="8" stdDeviation="6" flood-color="#8a3055" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g stroke="#e29bb3" stroke-width="1.6" fill="none" opacity="0.85">
+    <path d="M 75,130 Q 90,180 100,230 Q 95,250 102,270"/>
+    <path d="M 125,120 Q 110,170 102,230 Q 105,250 100,270"/>
+    <path d="M 60,175 Q 85,210 100,230"/>
+    <path d="M 130,175 Q 115,210 100,230"/>
+  </g>
+
+  <g filter="url(#br-shadow)">
+    <!-- Top Right: Peach Balloon -->
+    <g>
+      <ellipse cx="125" cy="75" rx="36" ry="44" fill="url(#br-peach)"/>
+      <polygon points="125,118 120,124 130,124" fill="#d65735"/>
+      <ellipse cx="112" cy="58" rx="9" ry="14" transform="rotate(-20 112 58)" fill="#ffffff" opacity="0.6"/>
+      <circle cx="106" cy="46" r="3" fill="#ffffff" opacity="0.8"/>
+    </g>
+
+    <!-- Top Left: Lavender Balloon -->
+    <g>
+      <ellipse cx="75" cy="85" rx="34" ry="42" fill="url(#br-purple)"/>
+      <polygon points="75,126 70,132 80,132" fill="#8054c7"/>
+      <ellipse cx="64" cy="70" rx="8" ry="13" transform="rotate(-20 64 70)" fill="#ffffff" opacity="0.65"/>
+    </g>
+
+    <!-- Mid Right: Mint Balloon -->
+    <g>
+      <ellipse cx="130" cy="145" rx="34" ry="40" fill="url(#br-mint)"/>
+      <polygon points="130,184 125,190 135,190" fill="#1f937d"/>
+      <ellipse cx="120" cy="130" rx="8" ry="13" transform="rotate(-20 120 130)" fill="#ffffff" opacity="0.65"/>
+    </g>
+
+    <!-- Mid Left: Buttercup Yellow Balloon -->
+    <g>
+      <ellipse cx="62" cy="148" rx="32" ry="38" fill="url(#br-yellow)"/>
+      <polygon points="62,185 57,191 67,191" fill="#e6a422"/>
+      <ellipse cx="52" cy="135" rx="7" ry="12" transform="rotate(-20 52 135)" fill="#ffffff" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Pink Ribbon Bow tying balloons -->
+  <g transform="translate(100, 230)">
+    <path d="M 0,0 C -20,-15 -25,2 -4,4 Z" fill="#ff6b95"/>
+    <path d="M 0,0 C 20,-15 25,2 4,4 Z" fill="#ff6b95"/>
+    <circle cx="0" cy="2" r="5" fill="#e63d6f"/>
+    <path d="M -2,4 Q -10,20 -16,28 Q -13,20 -4,10 Z" fill="#ff6b95"/>
+    <path d="M 2,4 Q 10,20 16,28 Q 13,20 4,10 Z" fill="#ff6b95"/>
+  </g>
+</svg>

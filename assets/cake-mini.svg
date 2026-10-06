@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cm-cake" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8f2"/>
+      <stop offset="50%" stop-color="#f5e1cb"/>
+      <stop offset="100%" stop-color="#e2bf9f"/>
+    </linearGradient>
+    <linearGradient id="cm-frosting" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fae8f0"/>
+    </linearGradient>
+    <radialGradient id="cm-berry" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff5474"/>
+      <stop offset="60%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#9f1239"/>
+    </radialGradient>
+    <radialGradient id="cm-flame" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fff37a"/>
+      <stop offset="75%" stop-color="#ffa033"/>
+      <stop offset="100%" stop-color="#ff5511" stop-opacity="0.8"/>
+    </radialGradient>
+    <filter id="cm-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#703045" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#cm-shadow)">
+    <!-- Cake Base Body -->
+    <ellipse cx="50" cy="74" rx="42" ry="12" fill="url(#cm-cake)"/>
+    <rect x="8" y="45" width="84" height="29" fill="url(#cm-cake)"/>
+    <ellipse cx="50" cy="45" rx="42" ry="12" fill="url(#cm-frosting)"/>
+
+    <!-- Dripping Cream Frosting -->
+    <path d="M 8,45 C 8,45 14,60 22,54 C 30,48 34,62 42,55 C 50,48 54,64 62,56 C 70,48 76,60 84,52 C 90,46 92,45 92,45 L 92,45 C 92,45 80,43 50,43 C 20,43 8,45 8,45 Z" fill="#ffffff"/>
+
+    <!-- Red Strawberries / Cherries on Top -->
+    <ellipse cx="24" cy="42" rx="4.5" ry="5.5" fill="url(#cm-berry)"/>
+    <ellipse cx="40" cy="45" rx="5" ry="6" fill="url(#cm-berry)"/>
+    <ellipse cx="60" cy="45" rx="5" ry="6" fill="url(#cm-berry)"/>
+    <ellipse cx="76" cy="42" rx="4.5" ry="5.5" fill="url(#cm-berry)"/>
+
+    <!-- Lit Candles on Top -->
+    <!-- Candle 1 -->
+    <g transform="translate(32, 14)">
+      <rect x="-2" y="10" width="4" height="22" rx="1.5" fill="#f43f5e"/>
+      <ellipse cx="0" cy="4" rx="3.5" ry="7" fill="url(#cm-flame)"/>
+    </g>
+    <!-- Candle 2 (Center) -->
+    <g transform="translate(50, 10)">
+      <rect x="-2.2" y="10" width="4.5" height="24" rx="1.5" fill="#38bdf8"/>
+      <ellipse cx="0" cy="4" rx="4" ry="8" fill="url(#cm-flame)"/>
+    </g>
+    <!-- Candle 3 -->
+    <g transform="translate(68, 14)">
+      <rect x="-2" y="10" width="4" height="22" rx="1.5" fill="#eab308"/>
+      <ellipse cx="0" cy="4" rx="3.5" ry="7" fill="url(#cm-flame)"/>
+    </g>
+  </g>
+</svg>

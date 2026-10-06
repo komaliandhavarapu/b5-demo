@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Tiny Birthday Surprise • Open With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <!-- Floating Sparkles -->
+  <div class="sparkle-particles" id="sparkleContainer"></div>
+
+  <!-- Decorative Corner Accents matching Screenshot 1 -->
+  <img src="assets/accent-heart.svg" class="accent-heart-left" alt="heart decoration">
+  <img src="assets/accent-bow.svg" class="accent-bow-right" alt="ribbon decoration">
+
+  <main class="screen envelope-screen">
+    <div class="screen-container">
+      <p class="eyebrow-script">a little something <span class="sparkle">✨</span></p>
+      <h1 class="headline-serif">There’s<br>something <span class="accent-pink">for you</span></h1>
+      <p class="subtext">A tiny birthday surprise, made just for you.</p>
+
+      <!-- Envelope Component (Slide 1 & 2) -->
+      <div class="envelope-stage" id="envelope">
+        <!-- Slide 2 pop-up characters -->
+        <img src="assets/teddy-gift.svg" class="pop-teddy-left" alt="Teddy bear with gift box">
+        <img src="assets/bunny-party.svg" class="pop-bunny-right" alt="Cheering bunny rabbit">
+
+        <div class="envelope-wrapper">
+          <div class="envelope-back"></div>
+
+          <!-- Slide 2 letter card -->
+          <div class="envelope-card" id="envelopeCard">
+            <p class="card-prefix">for</p>
+            <h2 class="card-recipient" data-name>Aanya</h2>
+            <div class="card-sparkles-row">✦ ✨ ✦</div>
+          </div>
+
+          <!-- Envelope pocket flaps -->
+          <div class="envelope-pocket">
+            <div class="pocket-bottom"></div>
+            <div class="pocket-left"></div>
+            <div class="pocket-right"></div>
+            <img src="assets/envelope-flowers.svg" class="pocket-flower-left" alt="floral sprig">
+            <img src="assets/envelope-flowers.svg" class="pocket-flower-right" alt="floral sprig">
+          </div>
+
+          <!-- Top triangular flap -->
+          <div class="envelope-top-flap"></div>
+
+          <!-- Lavender Bouquet & 3D Pink Heart Wax Seal -->
+          <div class="envelope-seal-wrapper">
+            <img src="assets/lavender-seal.svg" alt="Wax seal with lavender bouquet" style="width: 100%; height: 100%;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Call To Action Button -->
+      <button class="btn-surprise" id="openEnvelope">
+        <span class="btn-icon-heart">🤍</span>
+        <span class="btn-surprise-text">Open your surprise ✨</span>
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

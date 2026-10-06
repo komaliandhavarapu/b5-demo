@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="100%" height="100%">
+  <defs>
+    <!-- Teddy Bear Shading -->
+    <radialGradient id="tb-fur" cx="45%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#fedcb0"/>
+      <stop offset="50%" stop-color="#f5ba75"/>
+      <stop offset="85%" stop-color="#e29b4c"/>
+      <stop offset="100%" stop-color="#c67e33"/>
+    </radialGradient>
+    <radialGradient id="tb-snout" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fff5ea"/>
+      <stop offset="80%" stop-color="#fce2c5"/>
+      <stop offset="100%" stop-color="#f0caa2"/>
+    </radialGradient>
+    <radialGradient id="tb-ear-inner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffaab8"/>
+      <stop offset="100%" stop-color="#e97b91"/>
+    </radialGradient>
+    <radialGradient id="tb-blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7b92" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ff7b92" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Party Hat -->
+    <linearGradient id="tb-hat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8da9"/>
+      <stop offset="40%" stop-color="#ffd56b"/>
+      <stop offset="70%" stop-color="#72dec9"/>
+      <stop offset="100%" stop-color="#ab90fa"/>
+    </linearGradient>
+    <!-- Pink Balloon -->
+    <radialGradient id="tb-bal" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#ff94b2"/>
+      <stop offset="80%" stop-color="#f43f75"/>
+      <stop offset="100%" stop-color="#bf164e"/>
+    </radialGradient>
+    <filter id="tb-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#803818" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Pink Helium Balloon on Left with string held by right paw -->
+  <g filter="url(#tb-shadow)">
+    <!-- String from balloon to paw -->
+    <path d="M 68,90 Q 75,120 102,145" fill="none" stroke="#d47997" stroke-width="1.8"/>
+    
+    <!-- Balloon Body -->
+    <g transform="translate(68, 70)">
+      <ellipse cx="0" cy="0" rx="34" ry="40" fill="url(#tb-bal)"/>
+      <!-- Knot -->
+      <polygon points="0,38 -5,44 5,44" fill="#bf164e"/>
+      <!-- Specular highlight -->
+      <ellipse cx="-10" cy="-14" rx="9" ry="14" transform="rotate(-25 -10 -14)" fill="#ffffff" opacity="0.65"/>
+      <circle cx="-16" cy="-24" r="3" fill="#ffffff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Floating Teddy Bear Body -->
+  <g filter="url(#tb-shadow)">
+    <!-- Ears -->
+    <circle cx="106" cy="116" r="21" fill="url(#tb-fur)"/>
+    <circle cx="106" cy="116" r="11" fill="url(#tb-ear-inner)"/>
+    
+    <circle cx="184" cy="116" r="21" fill="url(#tb-fur)"/>
+    <circle cx="184" cy="116" r="11" fill="url(#tb-ear-inner)"/>
+
+    <!-- Chubby Body slightly tilted floating -->
+    <ellipse cx="145" cy="205" rx="46" ry="42" fill="url(#tb-fur)"/>
+    <ellipse cx="145" cy="205" rx="30" ry="28" fill="url(#tb-snout)" opacity="0.85"/>
+
+    <!-- Feet Bottom floating in air -->
+    <ellipse cx="120" cy="242" rx="16" ry="12" transform="rotate(-10 120 242)" fill="url(#tb-fur)"/>
+    <circle cx="120" cy="242" r="7" fill="url(#tb-ear-inner)" opacity="0.5"/>
+    <ellipse cx="168" cy="240" rx="16" ry="12" transform="rotate(10 168 240)" fill="url(#tb-fur)"/>
+    <circle cx="168" cy="240" r="7" fill="url(#tb-ear-inner)" opacity="0.5"/>
+
+    <!-- Right Paw holding balloon string -->
+    <g transform="translate(102, 145)">
+      <ellipse cx="0" cy="0" rx="13" ry="11" transform="rotate(-20)" fill="url(#tb-fur)"/>
+      <circle cx="-1" cy="0" r="5" fill="url(#tb-ear-inner)" opacity="0.45"/>
+    </g>
+
+    <!-- Left Paw raised high, waving cheerfully! -->
+    <g transform="translate(186, 126)">
+      <ellipse cx="0" cy="0" rx="14" ry="17" transform="rotate(35)" fill="url(#tb-fur)"/>
+      <!-- Pink paw pad -->
+      <ellipse cx="1" cy="-1" rx="7" ry="9" transform="rotate(35)" fill="url(#tb-ear-inner)" opacity="0.75"/>
+      <circle cx="-4" cy="-8" r="2.2" fill="url(#tb-ear-inner)" opacity="0.75"/>
+      <circle cx="1" cy="-10" r="2.2" fill="url(#tb-ear-inner)" opacity="0.75"/>
+      <circle cx="6" cy="-8" r="2.2" fill="url(#tb-ear-inner)" opacity="0.75"/>
+    </g>
+
+    <!-- Head -->
+    <circle cx="145" cy="144" r="46" fill="url(#tb-fur)"/>
+
+    <!-- Party Hat -->
+    <polygon points="145,68 123,118 167,118" fill="url(#tb-hat)"/>
+    <path d="M 127,108 Q 145,112 163,108 L 165,114 Q 145,118 124,114 Z" fill="#ffd15c" opacity="0.9"/>
+    <path d="M 132,94 Q 145,97 158,94 L 160,100 Q 145,103 130,100 Z" fill="#ff7f9f" opacity="0.9"/>
+    <path d="M 138,80 Q 145,82 152,80 L 154,86 Q 145,88 136,86 Z" fill="#6ad5bf" opacity="0.9"/>
+    <circle cx="145" cy="66" r="8" fill="#fff" filter="drop-shadow(0 2px 2px rgba(0,0,0,0.15))"/>
+    <circle cx="145" cy="66" r="5" fill="#ffe28a"/>
+    <!-- Daisy Flower on hat brim -->
+    <circle cx="123" cy="116" r="6" fill="#ffffff"/>
+    <circle cx="123" cy="116" r="3" fill="#ffe28a"/>
+
+    <!-- Snout -->
+    <ellipse cx="145" cy="156" rx="22" ry="16" fill="url(#tb-snout)"/>
+    <!-- Nose -->
+    <path d="M 140,150 C 140,147 150,147 150,150 C 150,154 146,157 145,157 C 144,157 140,154 140,150 Z" fill="#542e1d"/>
+    <ellipse cx="143" cy="149" rx="2" ry="1" fill="#fff" opacity="0.7"/>
+    <!-- Open happy smiling mouth -->
+    <path d="M 145,157 L 145,160 M 138,160 Q 145,169 152,160" stroke="#542e1d" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M 141,161 Q 145,168 149,161 Z" fill="#e85d7b"/>
+
+    <!-- Happy Eyes with reflections -->
+    <circle cx="126" cy="139" r="5.5" fill="#321b12"/>
+    <circle cx="124.5" cy="137" r="2" fill="#ffffff"/>
+    <circle cx="128" cy="140.5" r="1" fill="#ffffff"/>
+    
+    <circle cx="164" cy="139" r="5.5" fill="#321b12"/>
+    <circle cx="162.5" cy="137" r="2" fill="#ffffff"/>
+    <circle cx="166" cy="140.5" r="1" fill="#ffffff"/>
+
+    <!-- Rosy Blushing Cheeks -->
+    <circle cx="118" cy="151" r="11" fill="url(#tb-blush)"/>
+    <circle cx="172" cy="151" r="11" fill="url(#tb-blush)"/>
+  </g>
+</svg>

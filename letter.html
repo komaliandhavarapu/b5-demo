@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Letter For You • Open With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <main class="screen letter-screen">
+    <div class="screen-container" style="max-width: 480px;">
+      
+      <!-- Vintage Parchment Letter Paper matching Screenshot 5 -->
+      <div class="parchment-letter">
+        <!-- Pinned Flower Bouquet at Top-Right -->
+        <img src="assets/letter-bouquet.svg" class="letter-pinned-bouquet" alt="pinned floral bouquet">
+
+        <!-- Cute 3D Star Sticker at Bottom-Left -->
+        <img src="assets/sticker-star.svg" class="letter-pinned-star" alt="star sticker">
+
+        <p class="letter-eyebrow">a letter, just for you</p>
+        <h1 class="letter-title">For you, <span class="recipient-accent" data-name>Aanya</span></h1>
+        
+        <!-- Handwritten Squiggly Yellow Underline -->
+        <svg class="squiggly-line" viewBox="0 0 140 10">
+          <path d="M 5,5 Q 20,0 35,5 T 65,5 T 95,5 T 125,5 T 135,5"/>
+        </svg>
+
+        <!-- Emotional Birthday Letter Text -->
+        <div class="letter-body">
+          <p><span class="dropcap">H</span>appy birthday, you wonderful human.</p>
+          <p>I wanted to make you something that felt a little like you — warm, a bit silly, and full of tiny surprises. So here it is: a small corner of the internet that exists only because you do.</p>
+          <p>Thank you for every late-night talk, every ridiculous inside joke, every time you showed up without being asked. You make ordinary days feel like something worth remembering.</p>
+          <p>This year, I hope you get the slow mornings, the loud laughs, the good news you’ve been waiting for, and at least one perfect slice of cake.</p>
+          <p>Whatever you wished for back there — I hope it finds you soon. And if it takes a little while, I’ll be right here, cheering the loudest.</p>
+          <p class="letter-closing">Happy birthday. Today is all yours.</p>
+          <p class="letter-signature">Someone who loves you dearly ♡</p>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div style="width: 100%; display: flex; justify-content: flex-end;">
+        <button class="btn-more" data-next="final.html">One last thing 👑</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

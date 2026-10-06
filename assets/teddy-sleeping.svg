@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ts-fur" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fedcb0"/>
+      <stop offset="50%" stop-color="#f5ba75"/>
+      <stop offset="85%" stop-color="#e29b4c"/>
+      <stop offset="100%" stop-color="#c67e33"/>
+    </radialGradient>
+    <radialGradient id="ts-snout" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fff5ea"/>
+      <stop offset="80%" stop-color="#fce2c5"/>
+      <stop offset="100%" stop-color="#f0caa2"/>
+    </radialGradient>
+    <radialGradient id="ts-ear-inner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffaab8"/>
+      <stop offset="100%" stop-color="#e97b91"/>
+    </radialGradient>
+    <radialGradient id="ts-blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7b92" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff7b92" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ts-hat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9ab5"/>
+      <stop offset="50%" stop-color="#ffd56b"/>
+      <stop offset="100%" stop-color="#7fe0cc"/>
+    </linearGradient>
+    <filter id="ts-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#ts-shadow)">
+    <!-- Sleeping Body Curled Up -->
+    <ellipse cx="140" cy="120" rx="65" ry="46" fill="url(#ts-fur)"/>
+    <!-- Cute tail -->
+    <circle cx="204" cy="120" r="16" fill="url(#ts-fur)"/>
+    <circle cx="204" cy="120" r="10" fill="url(#ts-snout)" opacity="0.6"/>
+
+    <!-- Back Paws curled -->
+    <ellipse cx="178" cy="148" rx="20" ry="14" fill="url(#ts-fur)"/>
+    <circle cx="178" cy="148" r="8" fill="url(#ts-ear-inner)" opacity="0.45"/>
+
+    <!-- Left Ear (back) -->
+    <circle cx="60" cy="72" r="20" fill="url(#ts-fur)"/>
+    <circle cx="60" cy="72" r="11" fill="url(#ts-ear-inner)"/>
+
+    <!-- Head Resting -->
+    <circle cx="95" cy="100" r="48" fill="url(#ts-fur)"/>
+
+    <!-- Right Ear (front) -->
+    <circle cx="132" cy="70" r="20" fill="url(#ts-fur)"/>
+    <circle cx="132" cy="70" r="11" fill="url(#ts-ear-inner)"/>
+
+    <!-- Party Hat tilted sleeping -->
+    <g transform="rotate(-24 90 40)">
+      <polygon points="90,14 70,64 110,64" fill="url(#ts-hat)"/>
+      <path d="M 74,56 Q 90,59 106,56 L 108,61 Q 90,64 72,61 Z" fill="#ffd15c" opacity="0.9"/>
+      <path d="M 78,44 Q 90,47 102,44 L 104,49 Q 90,52 76,49 Z" fill="#ff7f9f" opacity="0.9"/>
+      <circle cx="90" cy="12" r="8" fill="#fff"/>
+      <circle cx="90" cy="12" r="5" fill="#ffe28a"/>
+      <circle cx="72" cy="64" r="5" fill="#ffbcd2"/>
+    </g>
+
+    <!-- Snout resting sideways -->
+    <ellipse cx="88" cy="115" rx="22" ry="16" fill="url(#ts-snout)"/>
+    <!-- Nose -->
+    <path d="M 83,109 C 83,106 93,106 93,109 C 93,113 89,116 88,116 C 87,116 83,113 83,109 Z" fill="#542e1d"/>
+    <!-- Mouth sleeping peaceful smile -->
+    <path d="M 88,116 L 88,119 M 84,119 Q 88,123 93,119" stroke="#542e1d" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Sleeping Eyes (curved peaceful closed lashes) -->
+    <path d="M 68,98 Q 75,106 82,98" stroke="#422517" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 104,98 Q 111,106 118,98" stroke="#422517" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Blushing cheeks -->
+    <circle cx="66" cy="110" r="10" fill="url(#ts-blush)"/>
+    <circle cx="118" cy="110" r="10" fill="url(#ts-blush)"/>
+
+    <!-- Front paws resting under head -->
+    <ellipse cx="78" cy="144" rx="18" ry="13" fill="url(#ts-fur)"/>
+    <circle cx="78" cy="144" r="7" fill="url(#ts-ear-inner)" opacity="0.45"/>
+    <ellipse cx="110" cy="146" rx="16" ry="12" fill="url(#ts-fur)"/>
+    <circle cx="110" cy="146" r="6" fill="url(#ts-ear-inner)" opacity="0.45"/>
+
+    <!-- Soft Zzz floating -->
+    <g opacity="0.75" fill="#f7d050" font-family="'Caveat', cursive" font-weight="bold">
+      <text x="50" y="55" font-size="18" transform="rotate(-15 50 55)">z</text>
+      <text x="35" y="38" font-size="22" transform="rotate(-20 35 38)">z</text>
+      <text x="20" y="18" font-size="26" transform="rotate(-25 20 18)">Z</text>
+    </g>
+  </g>
+</svg>

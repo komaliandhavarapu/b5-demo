@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Precious Memories • Open With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <main class="screen memories-screen">
+    <div class="screen-container" style="max-width: 520px;">
+      
+      <!-- Header matching Screenshot 4 -->
+      <div class="memories-header">
+        <h1 class="memories-title">Some moments are<br>worth keeping forever.</h1>
+        <p class="memories-sub">Here’s to all the laughs, chaos, late-night talks and little moments.</p>
+      </div>
+
+      <!-- Polaroid Cards Grid -->
+      <div class="polaroid-gallery">
+        
+        <!-- Polaroid 1: That Sunny Picnic -->
+        <div class="polaroid-card card-rot-1">
+          <div class="washi-strip washi-purple"></div>
+          <img src="assets/accent-heart.svg" class="card-sticker-heart" alt="heart sticker">
+          <div class="polaroid-img-wrap">
+            <img src="assets/memory-picnic.svg" alt="Teddy and Bunny picnic in meadow">
+          </div>
+          <p class="polaroid-caption">that sunny picnic</p>
+        </div>
+
+        <!-- Polaroid 2: Counting Stars -->
+        <div class="polaroid-card card-rot-2">
+          <div class="washi-strip washi-pink"></div>
+          <div class="polaroid-img-wrap">
+            <img src="assets/memory-stars.svg" alt="Teddy and Bunny watching shooting stars">
+          </div>
+          <p class="polaroid-caption">counting stars</p>
+        </div>
+
+        <!-- Polaroid 3: The Great Baking -->
+        <div class="polaroid-card card-rot-3">
+          <div class="washi-strip washi-mint"></div>
+          <img src="assets/sticker-star.svg" class="card-sticker-star" alt="star sticker">
+          <div class="polaroid-img-wrap">
+            <img src="assets/memory-baking.svg" alt="Teddy and Bunny baking in kitchen">
+          </div>
+          <p class="polaroid-caption">the great baking</p>
+        </div>
+
+        <!-- Polaroid 4: Top of the World -->
+        <div class="polaroid-card card-rot-4">
+          <div class="washi-strip washi-purple"></div>
+          <span class="card-sticker-sparkle">✦</span>
+          <div class="polaroid-img-wrap">
+            <img src="assets/memory-balloon.svg" alt="Teddy and Bunny in hot air balloon">
+          </div>
+          <p class="polaroid-caption">top of the world</p>
+        </div>
+
+      </div>
+
+      <!-- Action Button -->
+      <button class="btn-more" data-next="letter.html">Read your letter 💌</button>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

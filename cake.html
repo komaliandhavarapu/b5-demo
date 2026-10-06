@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cake Time • Make The First Cut</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" src="music/music.mp3" loop preload="auto"></audio>
+  <button class="music" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+  <!-- 3D Star Sticker in top-right corner matching Screenshot 1 & 2 -->
+  <img src="assets/sticker-star.svg" class="top-star-sticker" alt="star sticker">
+
+  <!-- Floating Sparkles -->
+  <div class="sparkle-particles" id="sparkleContainer"></div>
+
+  <main class="screen cake-screen" id="cakePage">
+    <div class="screen-container">
+      
+      <!-- Pre-cut State Header (Screenshot 1) -->
+      <div class="cake-pre-cut" id="cakePreCut">
+        <p class="eyebrow-script">Cake time</p>
+        <h1 class="headline-serif">Make the first cut <span class="sparkle-gold">✨</span></h1>
+        <p class="subtext">Swipe down across the cake, top to bottom.</p>
+      </div>
+
+      <!-- Post-cut State Header (Screenshot 2) -->
+      <div class="cake-post-cut" id="cakePostCut">
+        <p class="eyebrow-script">Cake time</p>
+        <h1 class="headline-serif">You did it! 🥳</h1>
+        <p class="subtext">The first slice is always the sweetest one.</p>
+        <button class="btn-more" id="btnMakeWish" data-next="wish.html">Make a wish ✨</button>
+      </div>
+
+      <!-- Interactive 3-Tier Birthday Cake Stage -->
+      <div class="cake-cut-stage" id="cakeStage">
+        <!-- SVG Cake with Separating Halves -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" width="100%" height="100%">
+          <defs>
+            <linearGradient id="ck-pink" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ff6092"/>
+              <stop offset="60%" stop-color="#f43f7a"/>
+              <stop offset="100%" stop-color="#d62460"/>
+            </linearGradient>
+            <linearGradient id="ck-yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#fff8db"/>
+              <stop offset="60%" stop-color="#ffeb99"/>
+              <stop offset="100%" stop-color="#ffd566"/>
+            </linearGradient>
+            <linearGradient id="ck-purple" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#f3ebff"/>
+              <stop offset="60%" stop-color="#d8c5fa"/>
+              <stop offset="100%" stop-color="#bba0ea"/>
+            </linearGradient>
+            <linearGradient id="ck-cream" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#fff2ea"/>
+            </linearGradient>
+            <linearGradient id="ck-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="60%" stop-color="#f5eff4"/>
+              <stop offset="100%" stop-color="#dfd2dd"/>
+            </linearGradient>
+            <radialGradient id="ck-flame" cx="50%" cy="60%" r="50%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="35%" stop-color="#fff37a"/>
+              <stop offset="75%" stop-color="#ffa033"/>
+              <stop offset="100%" stop-color="#ff5511" stop-opacity="0.8"/>
+            </radialGradient>
+            <radialGradient id="ck-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffe680" stop-opacity="0.85"/>
+              <stop offset="50%" stop-color="#ffd24d" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#ffae19" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="ck-shadow" x="-15%" y="-15%" width="130%" height="130%">
+              <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#803855" flood-opacity="0.18"/>
+            </filter>
+          </defs>
+
+          <!-- White ceramic platter -->
+          <g filter="url(#ck-shadow)">
+            <ellipse cx="180" cy="315" rx="140" ry="24" fill="url(#ck-plate)"/>
+            <ellipse cx="180" cy="312" rx="136" ry="20" fill="#ffffff"/>
+            <ellipse cx="180" cy="311" rx="125" ry="16" fill="#fcf8fa"/>
+          </g>
+
+          <!-- LEFT HALF OF CAKE -->
+          <g id="cakeLeft" class="cake-half cake-half-left">
+            <path d="M 60,305 L 180,305 L 180,240 L 60,240 Z" fill="url(#ck-cream)"/>
+            <circle cx="85" cy="285" r="2.5" fill="#52d2b5"/>
+            <circle cx="115" cy="295" r="2.5" fill="#ffb03a"/>
+            <circle cx="145" cy="288" r="2.5" fill="#a478e8"/>
+            <circle cx="165" cy="298" r="2.5" fill="#ff5e85"/>
+            <path d="M 55,240 L 180,240 L 180,275 C 172,275 168,265 160,278 C 152,290 142,285 135,270 C 128,285 118,288 110,272 C 102,286 92,282 85,268 C 78,282 68,280 62,265 C 57,250 55,240 55,240 Z" fill="url(#ck-pink)"/>
+
+            <path d="M 85,240 L 180,240 L 180,185 L 85,185 Z" fill="url(#ck-purple)"/>
+            <circle cx="105" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+            <circle cx="130" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+            <circle cx="155" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+            <path d="M 80,185 L 180,185 L 180,212 C 172,212 168,202 160,214 C 152,224 142,218 135,208 C 128,220 118,222 110,210 C 102,220 92,216 86,204 C 82,192 80,185 80,185 Z" fill="url(#ck-cream)"/>
+
+            <path d="M 105,185 L 180,185 L 180,140 L 105,140 Z" fill="url(#ck-yellow)"/>
+            <path d="M 100,140 L 180,140 L 180,165 C 174,165 170,156 164,168 C 156,176 148,172 142,162 C 136,172 128,174 122,164 C 116,172 108,168 104,158 C 100,148 100,140 100,140 Z" fill="url(#ck-pink)"/>
+
+            <circle cx="112" cy="140" r="7.5" fill="#d81d54"/>
+            <circle cx="110" cy="138" r="2" fill="#ffffff" opacity="0.8"/>
+            <circle cx="148" cy="140" r="7.5" fill="#d81d54"/>
+            <circle cx="146" cy="138" r="2" fill="#ffffff" opacity="0.8"/>
+
+            <g transform="translate(112, 85)">
+              <circle cx="0" cy="-6" r="18" fill="url(#ck-glow)"/>
+              <rect x="-4" y="10" width="8" height="45" rx="3" fill="#69e0c3"/>
+              <line x1="-4" y1="20" x2="4" y2="28" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="-4" y1="35" x2="4" y2="43" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="0" y1="10" x2="0" y2="0" stroke="#4a2512" stroke-width="1.8"/>
+              <ellipse cx="0" cy="-6" rx="6" ry="12" fill="url(#ck-flame)"/>
+            </g>
+
+            <g transform="translate(148, 80)">
+              <circle cx="0" cy="-6" r="18" fill="url(#ck-glow)"/>
+              <rect x="-4" y="10" width="8" height="50" rx="3" fill="#ffb4cf"/>
+              <line x1="-4" y1="20" x2="4" y2="28" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="-4" y1="35" x2="4" y2="43" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="0" y1="10" x2="0" y2="0" stroke="#4a2512" stroke-width="1.8"/>
+              <ellipse cx="0" cy="-6" rx="6" ry="12" fill="url(#ck-flame)"/>
+            </g>
+          </g>
+
+          <!-- RIGHT HALF OF CAKE -->
+          <g id="cakeRight" class="cake-half cake-half-right">
+            <path d="M 180,305 L 300,305 L 300,240 L 180,240 Z" fill="url(#ck-cream)"/>
+            <circle cx="195" cy="288" r="2.5" fill="#a478e8"/>
+            <circle cx="215" cy="295" r="2.5" fill="#ffb03a"/>
+            <circle cx="245" cy="285" r="2.5" fill="#52d2b5"/>
+            <circle cx="275" cy="296" r="2.5" fill="#ff5e85"/>
+            <path d="M 180,240 L 305,240 C 305,240 303,250 298,265 C 292,280 282,282 275,268 C 268,282 258,286 250,272 C 242,288 232,285 225,270 C 218,285 208,290 200,278 C 192,265 188,275 180,275 Z" fill="url(#ck-pink)"/>
+
+            <path d="M 180,240 L 275,240 L 275,185 L 180,185 Z" fill="url(#ck-purple)"/>
+            <circle cx="205" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+            <circle cx="230" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+            <circle cx="255" cy="225" r="2.5" fill="#ffffff" opacity="0.8"/>
+            <path d="M 180,185 L 280,185 C 280,185 278,192 274,204 C 268,216 258,220 250,210 C 242,222 232,220 225,208 C 218,218 208,224 200,214 C 192,202 188,212 180,212 Z" fill="url(#ck-cream)"/>
+
+            <path d="M 180,185 L 255,185 L 255,140 L 180,140 Z" fill="url(#ck-yellow)"/>
+            <path d="M 180,140 L 260,140 C 260,140 260,148 256,158 C 252,168 244,172 238,164 C 232,174 224,172 218,162 C 212,172 204,176 196,168 C 190,156 186,165 180,165 Z" fill="url(#ck-pink)"/>
+
+            <circle cx="212" cy="140" r="7.5" fill="#d81d54"/>
+            <circle cx="210" cy="138" r="2" fill="#ffffff" opacity="0.8"/>
+            <circle cx="248" cy="140" r="7.5" fill="#d81d54"/>
+            <circle cx="246" cy="138" r="2" fill="#ffffff" opacity="0.8"/>
+
+            <circle cx="180" cy="140" r="8" fill="#d81d54"/>
+            <circle cx="178" cy="138" r="2.2" fill="#ffffff" opacity="0.8"/>
+            
+            <g transform="translate(180, 75)">
+              <circle cx="0" cy="-6" r="20" fill="url(#ck-glow)"/>
+              <rect x="-4" y="10" width="8" height="55" rx="3" fill="#ffe066"/>
+              <line x1="-4" y1="20" x2="4" y2="28" stroke="#ff85aa" stroke-width="2.5"/>
+              <line x1="-4" y1="35" x2="4" y2="43" stroke="#ff85aa" stroke-width="2.5"/>
+              <line x1="0" y1="10" x2="0" y2="0" stroke="#4a2512" stroke-width="1.8"/>
+              <ellipse cx="0" cy="-6" rx="6.5" ry="13" fill="url(#ck-flame)"/>
+            </g>
+
+            <g transform="translate(212, 80)">
+              <circle cx="0" cy="-6" r="18" fill="url(#ck-glow)"/>
+              <rect x="-4" y="10" width="8" height="50" rx="3" fill="#a484e8"/>
+              <line x1="-4" y1="20" x2="4" y2="28" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="-4" y1="35" x2="4" y2="43" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="0" y1="10" x2="0" y2="0" stroke="#4a2512" stroke-width="1.8"/>
+              <ellipse cx="0" cy="-6" rx="6" ry="12" fill="url(#ck-flame)"/>
+            </g>
+
+            <g transform="translate(248, 85)">
+              <circle cx="0" cy="-6" r="18" fill="url(#ck-glow)"/>
+              <rect x="-4" y="10" width="8" height="45" rx="3" fill="#69e0c3"/>
+              <line x1="-4" y1="20" x2="4" y2="28" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="-4" y1="35" x2="4" y2="43" stroke="#ffffff" stroke-width="2.5"/>
+              <line x1="0" y1="10" x2="0" y2="0" stroke="#4a2512" stroke-width="1.8"/>
+              <ellipse cx="0" cy="-6" rx="6" ry="12" fill="url(#ck-flame)"/>
+            </g>
+          </g>
+        </svg>
+
+        <!-- Interactive Vertical Cutting Guide Line -->
+        <div class="interactive-cut-line" id="cutLine">
+          <div class="cut-handle-target"></div>
+          <div class="cut-line-dashed"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

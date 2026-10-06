@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <filter id="bt-shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#803850" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Hanging string curves -->
+  <!-- Arc 1 -->
+  <path d="M 0,25 Q 250,55 500,25 Q 750,55 1000,25" fill="none" stroke="#d5b5c3" stroke-width="2.5"/>
+
+  <!-- Flags along Arc 1 & 2 -->
+  <g filter="url(#bt-shadow)">
+    <!-- Flag 1: Yellow -->
+    <polygon points="30,27 100,34 65,100" fill="#ffd868"/>
+    <path d="M 40,30 L 65,95 L 90,33" fill="none" stroke="#f6c243" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Flag 2: Mint Green with stripes -->
+    <polygon points="120,36 190,41 155,108" fill="#7ce4c9"/>
+    <line x1="135" y1="40" x2="160" y2="100" stroke="#5cc8ac" stroke-width="2" opacity="0.7"/>
+    <line x1="150" y1="40" x2="168" y2="85" stroke="#5cc8ac" stroke-width="2" opacity="0.7"/>
+    <line x1="165" y1="40" x2="175" y2="70" stroke="#5cc8ac" stroke-width="2" opacity="0.7"/>
+
+    <!-- Flag 3: Soft Coral Pink with dots -->
+    <polygon points="210,43 280,45 245,114" fill="#ff94aa"/>
+    <circle cx="245" cy="65" r="4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="235" cy="85" r="3.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="255" cy="85" r="3.5" fill="#ffffff" opacity="0.7"/>
+
+    <!-- Flag 4: Lavender Purple -->
+    <polygon points="300,45 370,43 335,112" fill="#c3a2f7"/>
+    <polygon points="315,46 355,44 335,90" fill="#ae84ee" opacity="0.5"/>
+
+    <!-- Flag 5: Buttercup Peach -->
+    <polygon points="390,41 460,35 425,106" fill="#fca882"/>
+
+    <!-- Flag 6: Mint Green -->
+    <polygon points="480,33 550,33 515,102" fill="#7ce4c9"/>
+
+    <!-- Flag 7: Soft Coral Pink -->
+    <polygon points="570,35 640,41 605,106" fill="#ff94aa"/>
+
+    <!-- Flag 8: Pastel Yellow -->
+    <polygon points="660,43 730,45 695,112" fill="#ffd868"/>
+
+    <!-- Flag 9: Lavender Purple -->
+    <polygon points="750,45 820,43 785,114" fill="#c3a2f7"/>
+
+    <!-- Flag 10: Buttercup Peach -->
+    <polygon points="840,41 910,36 875,108" fill="#fca882"/>
+
+    <!-- Flag 11: Mint Green -->
+    <polygon points="930,34 1000,27 965,100" fill="#7ce4c9"/>
+  </g>
+</svg>

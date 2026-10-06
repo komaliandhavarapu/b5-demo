@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 300" width="100%" height="100%">
+  <defs>
+    <!-- Coral Pink Balloon -->
+    <radialGradient id="bal-pink" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff0f3"/>
+      <stop offset="25%" stop-color="#ffa8ba"/>
+      <stop offset="75%" stop-color="#f76e8a"/>
+      <stop offset="100%" stop-color="#cf3b5a"/>
+    </radialGradient>
+    <!-- Yellow Polka Balloon -->
+    <radialGradient id="bal-yellow" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fffef0"/>
+      <stop offset="25%" stop-color="#ffe999"/>
+      <stop offset="75%" stop-color="#ffd25c"/>
+      <stop offset="100%" stop-color="#e6a422"/>
+    </radialGradient>
+    <!-- Lavender Floral Balloon -->
+    <radialGradient id="bal-purple" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="25%" stop-color="#d6bbfb"/>
+      <stop offset="75%" stop-color="#b692f6"/>
+      <stop offset="100%" stop-color="#8054c7"/>
+    </radialGradient>
+    <!-- Mint Heart Balloon -->
+    <radialGradient id="bal-mint" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f0fdf9"/>
+      <stop offset="25%" stop-color="#99f6e0"/>
+      <stop offset="75%" stop-color="#47cdb2"/>
+      <stop offset="100%" stop-color="#1f937d"/>
+    </radialGradient>
+    <!-- Hot Pink Accent Balloon -->
+    <radialGradient id="bal-hotpink" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#ff80a6"/>
+      <stop offset="80%" stop-color="#f43f75"/>
+      <stop offset="100%" stop-color="#be1850"/>
+    </radialGradient>
+    <filter id="bal-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#8a3055" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ribbon strings trailing down -->
+  <g stroke="#e29bb3" stroke-width="1.6" fill="none" opacity="0.85">
+    <path d="M 85,160 Q 90,200 110,250 Q 115,270 110,290"/>
+    <path d="M 140,150 Q 130,200 112,250 Q 110,270 114,290"/>
+    <path d="M 60,195 Q 80,225 110,250 Q 106,270 102,290"/>
+    <path d="M 100,205 Q 105,230 110,250"/>
+    <path d="M 145,215 Q 128,235 110,250"/>
+  </g>
+
+  <!-- Balloon Cluster -->
+  <g filter="url(#bal-shadow)">
+    <!-- 1. Top Left: Coral Pink Balloon -->
+    <g>
+      <ellipse cx="85" cy="85" rx="38" ry="46" fill="url(#bal-pink)"/>
+      <!-- Knot -->
+      <polygon points="85,130 80,136 90,136" fill="#cf3b5a"/>
+      <!-- Glossy highlight -->
+      <ellipse cx="72" cy="65" rx="10" ry="16" transform="rotate(-25 72 65)" fill="#ffffff" opacity="0.6"/>
+      <circle cx="64" cy="50" r="3" fill="#ffffff" opacity="0.8"/>
+    </g>
+
+    <!-- 2. Top Right: Yellow Polka Dots Balloon -->
+    <g>
+      <ellipse cx="145" cy="95" rx="36" ry="44" fill="url(#bal-yellow)"/>
+      <polygon points="145,138 140,144 150,144" fill="#e6a422"/>
+      <!-- Polka dots -->
+      <circle cx="130" cy="80" r="4.5" fill="#ffffff" opacity="0.75"/>
+      <circle cx="155" cy="85" r="4" fill="#ffffff" opacity="0.75"/>
+      <circle cx="140" cy="105" r="4" fill="#ffffff" opacity="0.75"/>
+      <circle cx="160" cy="115" r="3.5" fill="#ffffff" opacity="0.75"/>
+      <!-- Highlight -->
+      <ellipse cx="132" cy="76" rx="9" ry="14" transform="rotate(-20 132 76)" fill="#ffffff" opacity="0.65"/>
+    </g>
+
+    <!-- 3. Mid Left: Lavender Flower Balloon -->
+    <g>
+      <ellipse cx="60" cy="148" rx="36" ry="42" fill="url(#bal-purple)"/>
+      <polygon points="60,189 55,195 65,195" fill="#8054c7"/>
+      <!-- Daisy flower print on balloon -->
+      <g transform="translate(56, 142) scale(0.9)">
+        <circle cx="0" cy="0" r="4" fill="#ffd15c"/>
+        <ellipse cx="0" cy="-9" rx="3.5" ry="6" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="0" cy="9" rx="3.5" ry="6" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="-9" cy="0" rx="6" ry="3.5" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="9" cy="0" rx="6" ry="3.5" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="-6" cy="-6" rx="5" ry="3.5" transform="rotate(45 -6 -6)" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="6" cy="-6" rx="5" ry="3.5" transform="rotate(-45 6 -6)" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="-6" cy="6" rx="5" ry="3.5" transform="rotate(-45 -6 6)" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="6" cy="6" rx="5" ry="3.5" transform="rotate(45 6 6)" fill="#ffffff" opacity="0.9"/>
+      </g>
+      <!-- Highlight -->
+      <ellipse cx="48" cy="130" rx="9" ry="14" transform="rotate(-25 48 130)" fill="#ffffff" opacity="0.6"/>
+    </g>
+
+    <!-- 4. Front Mid-Right: Mint Heart Balloon -->
+    <g>
+      <ellipse cx="102" cy="165" rx="35" ry="42" fill="url(#bal-mint)"/>
+      <polygon points="102,206 97,212 107,212" fill="#1f937d"/>
+      <!-- Heart emblem -->
+      <path d="M 102,168 C 102,162 93,156 93,162 C 93,168 102,176 102,176 C 102,176 111,168 111,162 C 111,156 102,162 102,168 Z" fill="#ffffff" opacity="0.85"/>
+      <!-- Highlight -->
+      <ellipse cx="90" cy="148" rx="8" ry="13" transform="rotate(-20 90 148)" fill="#ffffff" opacity="0.65"/>
+    </g>
+
+    <!-- 5. Front Bottom-Right: Sweet Pink Balloon -->
+    <g>
+      <ellipse cx="152" cy="178" rx="32" ry="38" fill="url(#bal-hotpink)"/>
+      <polygon points="152,215 147,221 157,221" fill="#be1850"/>
+      <!-- Highlight -->
+      <ellipse cx="142" cy="164" rx="8" ry="12" transform="rotate(-20 142 164)" fill="#ffffff" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Big Satin Pink Ribbon Bow tying the balloons -->
+  <g transform="translate(110, 250)">
+    <!-- Left loop -->
+    <path d="M 0,0 C -25,-18 -32,2 -5,5 Z" fill="#ff6b95" filter="drop-shadow(0 2px 3px rgba(0,0,0,0.15))"/>
+    <path d="M 0,0 C -20,-12 -25,2 -5,4 Z" fill="#ff8dae"/>
+    <!-- Right loop -->
+    <path d="M 0,0 C 25,-18 32,2 5,5 Z" fill="#ff6b95" filter="drop-shadow(0 2px 3px rgba(0,0,0,0.15))"/>
+    <path d="M 0,0 C 20,-12 25,2 5,4 Z" fill="#ff8dae"/>
+    <!-- Knot -->
+    <circle cx="0" cy="2" r="6" fill="#e63d6f"/>
+    <circle cx="-1" cy="0" r="2.5" fill="#ffaec5"/>
+    <!-- Ribbon tails -->
+    <path d="M -3,5 Q -14,25 -22,35 Q -18,25 -5,12 Z" fill="#ff6b95"/>
+    <path d="M 3,5 Q 14,25 22,35 Q 18,25 5,12 Z" fill="#ff6b95"/>
+  </g>
+</svg>
